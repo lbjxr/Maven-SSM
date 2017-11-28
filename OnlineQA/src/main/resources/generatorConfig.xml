@@ -51,6 +51,11 @@
         </javaClientGenerator>
 
         <!-- 指定数据库表，要生成哪些表，就写哪些表，要和数据库对应，不能写错！ -->
-        <table tableName="users" domainObjectName="Users" />
+        <table tableName="users" domainObjectName="Users" 
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false" />
     </context>
 </generatorConfiguration>
